@@ -175,7 +175,7 @@
                   <h2 class="title is-3">SplitOut</h2>
                   <div class="content has-text-justified">
                     <p> 
-                      The core idea behind SplitOut is for the clients to train the entire network for
+                      The core idea behind <b>SplitOut</b> is for the clients to train the entire network for
                       a short duration using a small fraction (such as 1%) of their private data. The
                       gradients collected will then be used as training data for an outlier detection
                       method, which we expect will flag the gradients from an honest server as inliers
@@ -192,9 +192,9 @@
                     
                     <img src="static/images/table_splitoutmain.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
                     <p> 
-                      We demonstrated that SplitOut, an out-of-the-box outlier detection approach
+                      We demonstrated that <b>SplitOut</b>, an out-of-the-box outlier detection approach
                       using the local outlier factor algorithm, can detect whether a split learning
-                      server is launching a training-hijacking attack or not with almost-perfect accuracy.
+                      server is launching a <b>training-hijacking attack</b> or not with almost-perfect accuracy.
                     </p>
                   </div>
               </div>
@@ -203,41 +203,6 @@
   </div>
 </section>
 
-<section class="hero">
-  <div class="hero-body">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered">
-              <div class="column has-text-centered">
-                  <h2 class="title is-3">SplitOut</h2>
-                  <div class="content has-text-justified">
-                    <p> 
-                      The core idea behind SplitOut is for the clients to train the entire network for
-                      a short duration using a small fraction (such as 1%) of their private data. The
-                      gradients collected will then be used as training data for an outlier detection
-                      method, which we expect will flag the gradients from an honest server as inliers
-                      and those from a training-hijacking server as outliers. The method as we will 
-                      describe below can be implemented by using an out-of-the-box outlier detection
-                      method from libraries such as scikit-learn and requires only the addition of
-                      small amounts of bookkeeping code on top an existing SplitNN training setup. 
-                    </p>
-                    <br>
-                    <img src="static/images/fsha_results_OD.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
-                    
-                    <br>
-                    <br>
-                    
-                    <img src="static/images/table_splitoutmain.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
-                    <p> 
-                      We demonstrated that SplitOut, an out-of-the-box outlier detection approach
-                      using the local outlier factor algorithm, can detect whether a split learning
-                      server is launching a training-hijacking attack or not with almost-perfect accuracy.
-                    </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
 
 <section class="hero is-light">
   <div class="hero-body">
@@ -246,10 +211,10 @@
               <div class="column has-text-centered">
                   <h2 class="title is-3">Avoiding the Curse of Dimensionality</h2>
                   <div class="content has-text-justified">
-                    <img src="static/images/tsne-fsha-backdoor.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
+                    <img src="static/images/tsne-fsha-backdoor.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 60%;"/>
                     <br>
                     <p> 
-                      The t-SNE plots displaying a dimension reduction of honest
+                      The <b>t-SNE</b> plots displaying a dimension reduction of honest
                       and malicious gradients over one epoch are consistent with the observations
                       above since they also visualize honest gradients packed tightly, and malicious
                       gradients covering a larger space essentially encompassing the honest gradients.
@@ -271,17 +236,17 @@
               <div class="column has-text-centered">
                   <h2 class="title is-3">Avoiding the Curse of Dimensionality (cont'd)</h2>
                   <div class="content has-text-justified">
-                    <img src="static/images/l2dist.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
+                    <img src="static/images/l2dist.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 60%;"/>
                     <br>
                     <p> 
-                      Pair-wise average L2 distances between five randomly-chosen sets of gradients (corresponding to the first epoch) for honest training, FSHA and the
+                      Pair-wise average <b>L2 distances</b> between five randomly-chosen sets of gradients (corresponding to the first epoch) for honest training, FSHA and the
                       backdoor attack, each using the CIFAR10 dataset. The results are highly informative about the global and local structure of the
                       problem:
                     </p>
                     <ul>
-                      <li>Honest gradients are closer to honest gradients, as the top left quadrant isdarker than the top right (and its symmetric bottom left) quadrant. </li>
-                      <li>Honest gradients are also closer to each other among themselves than malicious gradients are since the top left quadrant is darker than the bottom right quadrant.</li>
-                      <li>Malicious gradients are closer to honest gradients than they are to other malicious gradients since the bottom left (and top right) quadrants are darker than the bottom right quadrant.</li>
+                      <li><b>Honest gradients</b> are closer to honest gradients, as the top left quadrant isdarker than the top right (and its symmetric bottom left) quadrant. </li>
+                      <li><b>Honest gradients</b> are also closer to each other among themselves than malicious gradients are since the top left quadrant is darker than the bottom right quadrant.</li>
+                      <li><b>Malicious gradients</b> are closer to honest gradients than they are to other malicious gradients since the bottom left (and top right) quadrants are darker than the bottom right quadrant.</li>
                     </ul>
                   </div>
               </div>
