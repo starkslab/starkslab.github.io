@@ -69,11 +69,12 @@
                     <sup>2</sup>Kadir Has University, Istanbul, Turkey,
                     <sup>3</sup>Bilkent University, Ankara, Turkey,
                     <sup>4</sup>Koç University, Istanbul, Turkey
+                    <br>
+                    <span class="eql-cntrb"><small><br><i><sup>*</sup>Indicates Equal Contribution</i></small></span>
                 </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><br>International Conference on Cryptology And Network Security 2024</span>
-                    <span class="eql-cntrb"><small><br><i><sup>*</sup>Indicates Equal Contribution</i></small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -166,8 +167,43 @@
 <!-- End paper abstract -->
 
 
+<section class="hero">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+              <div class="column has-text-centered">
+                  <h2 class="title is-3">SplitOut</h2>
+                  <div class="content has-text-justified">
+                    <img src="static/images/fsha_results_OD.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
+                    <br>
+                    <p> 
+                      The core idea behind SplitOut is for the clients to train the entire network for
+                      a short duration using a small fraction (such as 1%) of their private data. The
+                      gradients collected will then be used as training data for an outlier detection
+                      method, which we expect will flag the gradients from an honest server as inliers
+                      and those from a training-hijacking server as outliers. The method as we will 
+                      describe below can be implemented by using an out-of-the-box outlier detection
+                      method from libraries such as scikit-learn and requires only the addition of
+                      small amounts of bookkeeping code on top an existing SplitNN training setup. 
+                    </p>
+
+                    <img src="static/images/table_splitoutmain.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
+
+                    <p> 
+                      We demonstrated that SplitOut, an out-of-the-box outlier detection approach
+                      using the local outlier factor algorithm, can detect whether a split learning
+                      server is launching a training-hijacking attack or not with almost-perfect accuracy.
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -231,7 +267,7 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -257,7 +293,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -266,7 +302,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -276,7 +312,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -297,6 +333,28 @@
     </div>
 </section>
 <!--End BibTex citation -->
+
+
+<section class="hero">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+              <div class="column has-text-centered">
+                  <div class="content has-text-justified">
+                    <br>
+                    <p> 
+                      Check related research:
+                    </p>
+                    <ul>
+                      <li><a href="https://dl.acm.org/doi/pdf/10.1145/3559613.3563201">UnSplit: Data-Oblivious Model Inversion, Model Stealing, and Label Inference Attacks Against Split Learning</a></li>
+                      <li><a href="https://dl.acm.org/doi/pdf/10.1145/3559613.3563198">SplitGuard: Detecting and Mitigating Training-Hijacking Attacks in Split Learning</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 
   <footer class="footer">
